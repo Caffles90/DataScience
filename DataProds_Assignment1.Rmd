@@ -1,0 +1,17 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# `r Sys.Date()`
+
+```{r leaflet, echo = FALSE}
+library(leaflet)
+
+
+leaflet() %>%
+      addTiles() %>%
+      addMarkers(lat = 48.858, lng = 2.2945, popup = "Eiffel Tower (Height: 1,063ft)")
+
+```
